@@ -1,0 +1,21 @@
+{
+  "should_trigger": [
+    "/jvc-deepresearch 固态电池硫化物路线 2030 年前能否把电芯成本做到 60 美元/kWh 以下？",
+    "帮我把钙钛矿叠层组件的衰减问题研究到底，第一性原理 + 历史失败案例都要",
+    "deep research: will chiplet packaging displace monolithic SoCs for AI accelerators by 2030?",
+    "开四个辩手互相反驳，研究一下 AI for Materials 到底能不能缩短新材料研发周期",
+    "用 autoresearch 那种循环把这个问题榨干：硅碳负极的膨胀问题有没有根本解",
+    "这个问题我要最深的研究，不惜代价：核聚变商业化时间表"
+  ],
+  "should_not_trigger": [
+    "帮我看一下这份 BP 值不值得约创始人",
+    "今天英伟达股价多少",
+    "把这份访谈逐字稿整理成纪要",
+    "写一个这个项目的 bull case 和 bear case"
+  ],
+  "routing_notes": {
+    "BP 初筛": "jvc-prescreen",
+    "纪要": "jvc-meeting-notes",
+    "正反论点": "jvc-thesis-test"
+  }
+}

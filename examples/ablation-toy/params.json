@@ -1,0 +1,8 @@
+{"metric": "示例：储能度电成本 USD/kWh（玩具模型，仅演示用法）",
+ "params": {
+  "capex":       {"base": 120, "low": 90,  "high": 160, "null": 0, "dist": "tri",     "src": "示例"},
+  "cycles":      {"base": 6000, "low": 4000, "high": 9000, "null": 3000, "dist": "uniform", "src": "示例"},
+  "rte":         {"base": 0.88, "low": 0.84, "high": 0.92, "null": 0.80, "dist": "tri",  "src": "示例"},
+  "power_price": {"base": 0.05, "low": 0.03, "high": 0.08, "null": 0.0, "dist": "lognorm", "src": "示例"},
+  "om":          {"base": 0.15, "low": 0.08, "high": 0.25, "null": 0.0, "dist": "tri",  "src": "示例"}
+ }}

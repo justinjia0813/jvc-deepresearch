@@ -1,0 +1,21 @@
+interface:
+  display_name: "深度研究"
+  short_description: "海量检索 + 第一性原理 + 四人辩论 + 预注册实验与消融 + 自动研究循环"
+  default_prompt: "使用 jvc-deepresearch 研究这个问题：先定题和档位，按台账与门槛走完 S0–S6，交付结论在前、证据可审计的报告。"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets: ["codex", "claude", "generic"]
+  activation:
+    mode: "manual"
+  execution:
+    context: "inline"
+    shell: "bash"
+    subagents: "preferred"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
+  degradation:
+    codex: "native-skill-directory; debaters as isolated sequential sessions when no subagents"
+    claude: "native-skill-directory; Task subagents for debaters and parallel search"
+    generic: "single-agent role passes with written openings before cross-reading"

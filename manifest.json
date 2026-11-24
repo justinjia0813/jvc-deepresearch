@@ -1,0 +1,18 @@
+{
+  "name": "jvc-deepresearch",
+  "version": "1.0.0",
+  "updated_at": "2026-11-24",
+  "status": "active",
+  "maturity_tier": "beta",
+  "target_platforms": ["claude", "codex", "generic", "agent-skills-compatible"],
+  "components": ["skills/jvc-deepresearch", "evals", "examples"],
+  "output_contracts": [
+    "report.md: judgment-first research report with research status label",
+    "ledger.jsonl: append-only, hash-chained research ledger (queries, sources, claims, constraints, base rates, hypotheses, debate turns, cruxes, pre-registered experiments, results, loop iterations, waivers)",
+    "experiments/: re-runnable experiment scripts and ablation scorecards"
+  ],
+  "runtime": "Python 3.10+ standard library only",
+  "validation_status": "smoke-tested (evals/smoke_test.py); research quality still depends on the host model and its tools",
+  "related": ["https://github.com/justinjia0813/jvc-analyst"],
+  "license": "MIT"
+}
